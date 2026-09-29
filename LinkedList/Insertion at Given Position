@@ -1,0 +1,11 @@
+class LinkedListInsertion {
+    public void insertAtPos(Node head, int pos) {
+        Node a = new Node(50);
+        Node t = head;
+        for (int i = 1; i < pos - 1; i++) {
+            t = t.next;
+        }
+        a.next = t.next;
+        t.next = a;
+    }
+}
