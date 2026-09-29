@@ -1,0 +1,10 @@
+
+class Insertion {
+    public void insertAtBeginning() {
+        Node head = null; 
+        Node newNode = new Node(40);
+        newNode.next = head;
+        head = newNode;
+    }
+}
+
