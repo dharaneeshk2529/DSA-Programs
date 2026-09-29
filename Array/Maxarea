@@ -1,0 +1,15 @@
+public int maxArea(int[] a) {
+    int l = 0;
+    int R = a.length - 1;
+    int m = 0;
+    while (l < R) {
+        int c = Math.min(a[l], a[R]) * (R - l);
+        m = Math.max(c, m);
+        if (a[l] < a[R]) {
+            l++;
+        } else {
+            R--;
+        }
+    }
+    return m;
+}
